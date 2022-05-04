@@ -1,0 +1,30 @@
+[
+    {
+        "label": "Products",
+        "to": "products",
+        "dropdown": [
+            {
+                "label": "CPAP Masks",
+                "to": "products/masks"
+            }
+        ]
+    },
+    {
+        "label": "Knowledge Center",
+        "to": "knowledge-center",
+        "dropdown": [
+            {
+                "label": "category One",
+                "to": "learn-more/category-one"
+            }
+        ]
+    },
+    {
+        "label": "Blog",
+        "to": "blog"
+    },
+    {
+        "label": "Contact",
+        "to": "contact"
+    }
+]

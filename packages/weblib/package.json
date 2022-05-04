@@ -1,0 +1,53 @@
+{
+  "name": "@root/weblib",
+  "version": "1.0.0",
+  "description": "Component library - Storybook",
+  "main": "dist/index.js",
+  "typings": "dist/weblib.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "directories": {
+    "lib": "dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@storybook/addon-actions": "^6.5.0-beta.1",
+    "@storybook/addon-essentials": "^6.5.0-beta.1",
+    "@storybook/addon-interactions": "^6.5.0-beta.1",
+    "@storybook/addon-links": "^6.5.0-beta.1",
+    "@storybook/react": "^6.5.0-beta.1",
+    "@storybook/testing-library": "^0.0.11",
+    "babel-loader": "^8.2.5",
+    "@storybook/builder-webpack5": "^6.5.0-beta.1",
+    "@storybook/manager-webpack5": "^6.5.0-beta.1",
+    "@storybook/preset-scss": "^1.0.3",
+    "@types/lodash": "^4.14.178",
+    "@types/react": "^17.0.38",
+    "@types/styled-components": "^5.1.19",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-plugin-storybook": "^0.5.11",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.0",
+    "sass": "^1.47.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "tsc": "tsc --project tsconfig.build.json && cp ./src/assets ./dist -r"
+  }
+}

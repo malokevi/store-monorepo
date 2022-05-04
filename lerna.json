@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "./packages/api",
+    "./packages/weblib",
+    "./packages/web",
+    "./packages/admin"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "./packages/api",
+    "./packages/weblib",
+    "./packages/web",
+    "./packages/admin"
+  ],
+  "scripts": {
+    "start": "cd ./packages/web && yarn start && cd ../admin && yarn start",
+    "build": "cd ./packages/web && yarn build && cd ../admin && yarn build",
+    "test": "cd ./packages/web && yarn test && cd ../admin && yarn test",
+    "lerna:prepublish": "lerna bootstrap && lerna run build --include-dependencies --stream",
+    "lerna:publish": "yarn install && yarn run lerna:prepublish && lerna publish from-package --ignore-scripts --ignore-prepublish"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "lerna": "^4.0.0",
+    "node-sass": "^7.0.1",
+    "typescript": "^4.6.4"
+  }
+}
